@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="contacts.css">
+</head>
+<body>
+  <h1>Do I really have to?</h1>
+  <p>Should Manny put in his contacts?</p>
+  <img id= "rootimg" src="https://media1.giphy.com/media/cmyqqu3VloluMjTx6A/source.gif" alt="Italian Trulli">
+<script>
+  function myFunctiony() {
+    document.getElementById("rootimg").style.filter = "blur(0px)";
+  }
+  function myFunctionn() {
+    document.getElementById("rootimg").style.filter = "blur(10px)";
+    setTimeout(function(){ alert("Yeah, this was a bad idea. Let's put them back in."); document.getElementById("rootimg").style.filter = "blur(0px)";}, 4000);
+
+  }
+  </script>
+  <button id="1" onclick="myFunctiony()">Yes!!!</button>
+  <button id="2" onclick="myFunctionn()">Nope!</button>
+  <div class="row">
+    <div class="column">
+      <nav>
+        <ul>
+          <a href="clothes2.html">Back a Page!</a>
+        </ul>
+      <nav>
+    </div>
+    <!--<nav>
+      <ul>
+        <a href="tictactoe.html">Next Page!</a>
+      </ul>
+    </nav>
+    </div>
+  </div>
+
+  </html>

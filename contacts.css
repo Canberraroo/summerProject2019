@@ -1,0 +1,68 @@
+button{
+font-size: 30px;
+}
+.column {
+  flex-basis: 100%;
+}
+
+@media screen and (min-width: 800px) {
+  .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .column {
+    flex: 1;
+  }
+  ._25 {
+    flex: 2.5;
+  }
+  ._5 {
+    flex: 5;
+  }
+}
+/* Style */
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.column {
+  padding: 15px;
+  border: 5px solid #000;
+  margin: 5px 0;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+body{
+  color: black;
+}
+a{
+  color: black;
+  font-size: 100px;
+}
+body, html {
+  height: 100%;
+}
+
+body {
+  /* The image used */
+  background-image: url(https://images-na.ssl-images-amazon.com/images/I/61a4Y19aH7L._SX425_.jpg);
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

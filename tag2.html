@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="tag2.js"></script>
+<style>
+column {
+  flex-basis: 100%;
+}
+
+@media screen and (min-width: 800px) {
+  .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .column {
+    flex: 1;
+  }
+  ._25 {
+    flex: 2.5;
+  }
+  ._5 {
+    flex: 5;
+  }
+}
+/* Style */
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.column {
+  padding: 15px;
+  border: 5px solid #000;
+  margin: 5px 0;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+body{
+  color: black;
+}
+a{
+  color: black;
+  font-size: 100px;
+}
+
+
+
+body{
+background-color: blue
+}
+  #animation {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    -webkit-animation-name: example;
+    -webkit-animation-duration: 100s;
+    animation-name: example;
+    animation-duration: 45s;
+  }
+
+  /* Safari 4.0 - 8.0 */
+  @-webkit-keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:10000px; top:0px;}
+  }
+
+  /* Standard syntax */
+  @keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:10000px; top:0px;}
+  }
+  </style>
+</head>
+<body>
+  <div id= "animation"></div>
+  <h1>TAAAAAAAAAAAAAAGGGGGG!!!!!!!!!!!</h1>
+  <p>Manny and his freinds are playing tag!</p>
+  <p>You probably saw a red square above. That's Mannys freind, Red the red square!</p>
+  <p>Feel free to press reload as many times as you need!</p>
+   <p><b>Can you click on Red before she zooms away?</b></p>
+
+   <div class="row">
+     <div class="column">
+       <nav>
+         <ul>
+           <a href="butterfly.html">Back a Page!</a>
+         </ul>
+       <nav>
+     </div>
+     <div class="column">
+     <nav>
+       <ul>
+         <a href="tictactoe.html">Next Page!</a>
+       </ul>
+     </nav>
+     </div>
+   </div>
+  </body>
+
+  </html>

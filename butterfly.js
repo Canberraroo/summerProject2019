@@ -1,5 +1,6 @@
+//click start. goes through code once. click start again. goes through code twice. click start again. goes through code three times.
 $(document).ready(function () {
-  function start() {
+  //function start() {
 
   var pic = Math.floor(Math.random() * 5)
   console.log(pic)
@@ -9,8 +10,7 @@ $(document).ready(function () {
   $("#life").html(TheSentance);
   console.log("life")
 
-
-if (pic == 0 && lives > 0) {
+if (pic == 0) {
   $("#sun").click( () => {
     console.log("sun")
     alert("You Found The Butterfly!")
@@ -253,8 +253,5 @@ if (pic == 5) {
   const TheSentance= lives;
   $("#life").html(TheSentance);
 }
-}
-$("#startGame").click( () => {
-  start()
 });
-});
+//});

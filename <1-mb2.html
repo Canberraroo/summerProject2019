@@ -4,25 +4,23 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 </head>
 <body>
+
 <h1>Manny is learning about greater than or less than in math. His mom is quizzing him.</h1>
-Random Number from 1-99:<input type="text" id="input1"></input><br>
-Another Random Number from 1-99:<input type="text" id="input2"></input><br>
-<p id= "p"></p>
+Random Number:<input type="text" id="input1"></input><br>
+Another Random Number<input type="text" id="input2"></input><br>
 
-<button id="make">True or false. Is the first number greater than the secound number?</button>
+<button onclick="myFunction()">Is the first number greater than the second number</button>
 
-<p id="p2"></p>
+<p id="demo"></p>
 
 <script>
-
-$("button").click( () => {
-  let one= $("#input1").val();
-  let two= $("#input2").val();
-  document.getElementById("p2").innerHTML = Boolean( one > two);
-  console.log(one)
-  console.log(two)
-});
+const input1= $("#input1").val()
+const input2= $("#input1").val()
+function myFunction() {
+  document.getElementById("demo").innerHTML = input1 > input2;
+}
 </script>
+
 <style>
 .column {
   flex-basis: 100%;

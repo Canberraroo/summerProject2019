@@ -19,6 +19,9 @@
   }
 }
 /* Style */
+b{
+  color: blue;
+}
 
 body {
   font-family: 'Lato', sans-serif;

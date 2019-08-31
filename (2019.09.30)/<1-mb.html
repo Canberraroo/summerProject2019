@@ -5,8 +5,8 @@
 </head>
 <body>
 <h1>Manny is learning about greater than or less than in math. His mom is quizzing him.</h1>
-Random Number:<input type="text" id="input1"></input><br>
-Another Random Number:<input type="text" id="input2"></input><br>
+Random Number from 1-99:<input type="text" id="input1"></input><br>
+Another Random Number from 1-99:<input type="text" id="input2"></input><br>
 <p id= "p"></p>
 
 <button id="make">True or false. Is the first number greater than the secound number?</button>
@@ -18,8 +18,6 @@ Another Random Number:<input type="text" id="input2"></input><br>
 $("button").click( () => {
   let one= $("#input1").val();
   let two= $("#input2").val();
-  one = parseInt(one,10);
-  two = parseInt(two,10);
   document.getElementById("p2").innerHTML = Boolean( one > two);
   console.log(one)
   console.log(two)

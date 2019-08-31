@@ -5,8 +5,8 @@
 </head>
 <body>
 <h1>Manny is learning about greater than or less than in math. His mom is quizzing him.</h1>
-Random Number:<input type="text" id="input1"></input><br>
-Another Random Number:<input type="text" id="input2"></input><br>
+Random Number from 1-99:<input type="text" id="input1"></input><br>
+Another Random Number from 1-99:<input type="text" id="input2"></input><br>
 <p id= "p"></p>
 
 <button id="make">True or false. Is the first number greater than the secound number?</button>
@@ -15,14 +15,23 @@ Another Random Number:<input type="text" id="input2"></input><br>
 
 <script>
 
+var ant = 0;
+var roo = 0;
 $("button").click( () => {
-  let one= $("#input1").val();
-  let two= $("#input2").val();
-  one = parseInt(one,10);
-  two = parseInt(two,10);
-  document.getElementById("p2").innerHTML = Boolean( one > two);
-  console.log(one)
-  console.log(two)
+  let ant= $("#input1").val();
+  let roo= $("#input2").val();
+  ant = parseInt(ant,10);
+  roo = parseInt(roo,10);
+  problemAnswer = 0;
+  if(ant > roo){
+    problemAnswer = 1;
+  }
+  document.getElementById("p2").innerHTML = Boolean(problemAnswer);
+  //answermbadi = Boolean(one > two);
+  console.log("one=" + ant);
+  console.log("two=" + roo);
+  console.log("is one > two? " + problemAnswer);
+  console.log("is one > two? " + Boolean(problemAnswer));
 });
 </script>
 <style>

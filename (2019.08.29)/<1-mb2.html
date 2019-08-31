@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+</head>
+<body>
+
+<h1>Manny is learning about greater than or less than in math. His mom is quizzing him.</h1>
+Random Number:<input type="text" id="input1"></input><br>
+Another Random Number<input type="text" id="input2"></input><br>
+
+<button onclick="myFunction()">Is the first number greater than the second number</button>
+
+<p id="demo"></p>
+
+<script>
+const input1= $("#input1").val()
+const input2= $("#input1").val()
+function myFunction() {
+  document.getElementById("demo").innerHTML = input1 > input2;
+}
+</script>
+
+<style>
+.column {
+  flex-basis: 100%;
+}
+
+@media screen and (min-width: 800px) {
+  .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .column {
+    flex: 1;
+  }
+  ._25 {
+    flex: 2.5;
+  }
+  ._5 {
+    flex: 5;
+  }
+}
+/* Style */
+
+body {
+  color: lime;
+  font-family: 'Lato', sans-serif;
+}
+
+.column {
+  padding: 15px;
+  border: 5px solid #000;
+  margin: 5px 0;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+body{
+  color: lime;
+}
+a{
+  color: black;
+  font-size: 100px;
+}
+
+body {
+  color: yellow;
+  /* The image used */
+  background-image: url(https://www.mul.edu.pk/images/programs/msc-mathematics_26.jpg);
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</style>
+<div class="row">
+  <div class="column">
+    <nav>
+      <ul>
+        <a href="tag.html">Back a Page!</a>
+      </ul>
+    <nav>
+  </div>
+  <div class="column">
+  <nav>
+    <ul>
+      <a href="clothes2.html">Next Page!</a>
+    </ul>
+  </nav>
+  </div>
+</div>
+</body>
+</html>

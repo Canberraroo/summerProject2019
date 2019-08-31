@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="tictactoe.css">
+</head>
+<style>
+.column {
+  flex-basis: 100%;
+}
+
+@media screen and (min-width: 800px) {
+  .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .column {
+    flex: 1;
+  }
+  ._25 {
+    flex: 2.5;
+  }
+  ._5 {
+    flex: 5;
+  }
+}
+/* Style */
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.column {
+  padding: 15px;
+  border: 5px solid #000;
+  margin: 5px 0;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+body{
+  color: black;
+}
+a{
+  color: black;
+  font-size: 100px;
+}
+body{
+  background-color: yellow;
+}
+</style>
+<body>
+
+<script src="tictactoe.js"></script>
+
+<h1>Tic Tac Toe!</h1>
+<p></p>
+
+<p>Manny's been running around so</p>
+<p>much, he get's tired, so he </p>
+<p>decides to head over to his</p>
+<p> friend Joe-Bob's place.
+<p> They start playing tic tac toe!</p>
+<p><b>Play for Manny!</b></p>
+<p></p>
+
+<table>
+<tr>
+  <td class="cell" id="0"></td>
+  <td class="cell" id="1"></td>
+  <td class="cell" id="2"></td>
+</tr>
+<tr>
+  <td class="cell" id="3"></td>
+  <td class="cell" id="4"></td>
+  <td class="cell" id="5"></td>
+</tr>
+<tr>
+  <td class="cell" id="6"></td>
+  <td class="cell" id="7"></td>
+  <td class="cell" id="8"></td>
+</tr>
+</table>
+<div class="endgame">
+  <div class="text"></div>
+</div>
+<button id="startGame">Replay</button>
+<p></p>
+<div class="row">
+  <div class="column">
+    <nav>
+      <ul>
+        <a href="butterfly.html">Back a Page!</a>
+      </ul>
+    <nav>
+  </div>
+  <div class="column">
+  <nav>
+    <ul>
+      <a href="tag.html">Next Page!</a>
+    </ul>
+  </nav>
+  </div>
+</div>
+  </body>
+
+  </html>

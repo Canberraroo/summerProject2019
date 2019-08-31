@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>In the morning, Manny wakes up, and checks his day of the week calender!</h1>
+<p></p>
+<p id="p"></p>
+
+<style>
+.column {
+  flex-basis: 100%;
+}
+
+@media screen and (min-width: 800px) {
+  .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .column {
+    flex: 1;
+  }
+  ._25 {
+    flex: 2.5;
+  }
+  ._5 {
+    flex: 5;
+  }
+}
+/* Style */
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.column {
+  padding: 15px;
+  border: 5px solid #000;
+  margin: 5px 0;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1,
+h2 {
+  background-color: w;
+  text-align: center;
+}
+
+body{
+  color: red;
+}
+a{
+  color: black;
+  font-size: 100px;
+  background-color: white;
+}
+body, html {
+  height: 100%;
+}
+
+body {
+  color: red;
+  background-image: url(http://resources.finalsite.net/images/v1548263816/mntechnologycom/ehbqcu1tlbxya5zev5qi/imagebutton_calendar.png);
+
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+p{
+  background-color: white;
+}
+</style>
+<script>
+var day;
+switch (new Date().getDay()) {
+  case 0:
+    day = " Sunday, DON'T LEAVE ME WEEKEND!";
+    break;
+  case 1:
+    day = " Monday, WAH, WAH, WHY? *sniff* Why is the world so cruel. Sob, sob, sob.";
+    break;
+  case 2:
+    day = " Tuesday. I have nothing to say about this day. Move along.";
+    break;
+  case 3:
+    day = " Wednesday, Hump day, the day that is spelt weird day.";
+    break;
+  case 4:
+    day = " Thursday, is it tommorrow already?";
+    break;
+  case 5:
+    day = " Friday, almost, *pant* made it *pant* through the week, *pant*. So, *pant*, close, *pant*.";
+    break;
+  case  6:
+    day = " Saturday, IT'S THE WEEKEND!!!";
+}
+document.getElementById("p").innerHTML = "Today is " + day;
+</script>
+<div class="row">
+  <div class="column">
+    <nav>
+      <ul>
+        <a href="index.html">Back a Page!</a>
+      </ul>
+    <nav>
+  </div>
+  <div class="column">
+  <nav>
+    <ul>
+      <a href="butterfly.html">Next Page!</a>
+    </ul>
+  </nav>
+  </div>
+</div>
+</body>
+</html>

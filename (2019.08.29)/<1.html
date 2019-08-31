@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+Random Number:<input type="text" id="input1"></input><br>
+Another Random Number:<input type="text" id="input2"></input><br>
+<p id= "p"></p>
+
+<button id="button">is it true or false</button>
+
+<p id="p2"></p>
+
+<script>
+$("#button").click( () => {
+  var one= $("#input1").val();
+  var two= $("#input2").val();
+  var answer= Boolean(one>two);
+  //document.getElementById("p2").innerHTML = Boolean( one > two);
+  console.log(one)
+  console.log(two)
+  console.log(answer)
+});
+</script>
+
+</body>
+</html>
